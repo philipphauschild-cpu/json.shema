@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Startup Name",
+    "Comment",
+    "TUM, Makerspace, Venture Labs, or UTUM connection",
+    "At least 2 founders",
+    "B2B & industry-related",
+    "VC case or student initiative",
+    "DeepTech / High Tech"
+  ],
+  "properties": {
+    "Startup Name": { "type": "string", "minLength": 1 },
+    "Comment": { "type": "string", "maxLength": 160 },
+    "TUM, Makerspace, Venture Labs, or UTUM connection": { "type": "integer", "enum": [0, 1] },
+    "At least 2 founders": { "type": "integer", "enum": [0, 1] },
+    "B2B & industry-related": { "type": "integer", "enum": [0, 1] },
+    "VC case or student initiative": { "type": "integer", "enum": [0, 1] },
+    "DeepTech / High Tech": { "type": "integer", "enum": [0, 1] }
+  }
+}
