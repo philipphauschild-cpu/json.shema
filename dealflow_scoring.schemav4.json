@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bmodel_gtm_p3_beachhead_gtm_plan_quality",
+    "funding_p1_exit_opportunity",
+    "summary"
+  ],
+  "properties": {
+    "bmodel_gtm_p3_beachhead_gtm_plan_quality": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "funding_p1_exit_opportunity": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "summary": { "type": "string", "maxLength": 3000 }
+  }
+}
