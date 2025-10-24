@@ -2,19 +2,13 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "technology_p1_technical_maturity_readiness",
-    "bmodel_gtm_p1_market_size_growth_rigor",
-    "bmodel_gtm_p2_scalability_production_gtm",
-    "bmodel_gtm_p3_beachhead_gtm_plan_quality",
-    "funding_p1_exit_opportunity",
-    "summary"
+    "value_prop_p1_diff_defensibility_competitive_evidence",
+    "value_prop_p2_problem_fit_solution_validation_causal_clarity",
+    "value_prop_p3_validation_demand_pricing_learning_loops"
   ],
   "properties": {
-    "technology_p1_technical_maturity_readiness": { "type": "integer", "minimum": 1, "maximum": 10 },
-    "bmodel_gtm_p1_market_size_growth_rigor": { "type": "integer", "minimum": 1, "maximum": 10 },
-    "bmodel_gtm_p2_scalability_production_gtm": { "type": "integer", "minimum": 1, "maximum": 10 },
-    "bmodel_gtm_p3_beachhead_gtm_plan_quality": { "type": "integer", "minimum": 1, "maximum": 10 },
-    "funding_p1_exit_opportunity": { "type": "integer", "minimum": 1, "maximum": 10 },
-    "summary": { "type": "string", "maxLength": 3000 }
+    "value_prop_p1_diff_defensibility_competitive_evidence": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "value_prop_p2_problem_fit_solution_validation_causal_clarity": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "value_prop_p3_validation_demand_pricing_learning_loops": { "type": "integer", "minimum": 1, "maximum": 10 }
   }
 }
