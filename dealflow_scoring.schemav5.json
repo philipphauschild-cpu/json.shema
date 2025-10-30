@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Zapier Webhook Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source",
+    "summary",
+    "salesforce_data",
+    "notion_data",
+    "founders",
+    "news_and_funding",
+    "website",
+    "file_url"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "const": "internal",
+      "description": "Fixed origin tag."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600,
+      "description": "One-paragraph company summary for any startup."
+    },
+    "salesforce_data": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Flat text of CRM fields for the startup. Any values allowed."
+    },
+    "notion_data": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Flat text of research/notes. Any values allowed."
+    },
+    "founders": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Plain text list of founders and optional ownership. Any values allowed."
+    },
+    "news_and_funding": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Funding status, timelines, and updates. Any values allowed."
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "Company website."
+    },
+    "file_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to a related file."
+    }
+  }
+}
