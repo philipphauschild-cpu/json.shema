@@ -1,17 +1,17 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Zap Payload v5",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "source": { "type": "string", "enum": ["internal"] },
-    "summary": { "type": "string", "minLength": 1 },
-    "salesforce_data": { "type": "string", "minLength": 1 },
-    "notion_data": { "type": "string", "minLength": 1 },
-    "founders": { "type": "string", "minLength": 1 },
-    "news_and_funding": { "type": "string", "minLength": 1 },
-    "website": { "type": "string", "format": "uri" },
-    "file_url": { "type": "string", "format": "uri" }
+    "source": { "type": "string" },
+    "summary": { "type": "string" },
+    "salesforce_data": { "type": "string" },
+    "notion_data": { "type": "string" },
+    "founders": { "type": "string" },
+    "news_and_funding": { "type": "string" },
+    "website": { "type": "string" },
+    "file_url": { "type": "string" }
   },
   "required": [
     "source",
